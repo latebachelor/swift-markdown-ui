@@ -36,7 +36,7 @@ extension Theme {
         configuration.label
           .relativePadding(.bottom, length: .em(0.3))
           .relativeLineSpacing(.em(0.125))
-          .markdownMargin(top: 24, bottom: 16)
+          .markdownMargin(top: 20, bottom: 14)
           .markdownTextStyle {
             FontWeight(.semibold)
             FontSize(.em(2))
@@ -49,7 +49,7 @@ extension Theme {
         configuration.label
           .relativePadding(.bottom, length: .em(0.3))
           .relativeLineSpacing(.em(0.125))
-          .markdownMargin(top: 24, bottom: 16)
+          .markdownMargin(top: 20, bottom: 14)
           .markdownTextStyle {
             FontWeight(.semibold)
             FontSize(.em(1.5))
@@ -60,7 +60,7 @@ extension Theme {
     .heading3 { configuration in
       configuration.label
         .relativeLineSpacing(.em(0.125))
-        .markdownMargin(top: 24, bottom: 16)
+        .markdownMargin(top: 20, bottom: 14)
         .markdownTextStyle {
           FontWeight(.semibold)
           FontSize(.em(1.25))
@@ -69,7 +69,7 @@ extension Theme {
     .heading4 { configuration in
       configuration.label
         .relativeLineSpacing(.em(0.125))
-        .markdownMargin(top: 24, bottom: 16)
+        .markdownMargin(top: 20, bottom: 14)
         .markdownTextStyle {
           FontWeight(.semibold)
         }
@@ -77,7 +77,7 @@ extension Theme {
     .heading5 { configuration in
       configuration.label
         .relativeLineSpacing(.em(0.125))
-        .markdownMargin(top: 24, bottom: 16)
+        .markdownMargin(top: 20, bottom: 14)
         .markdownTextStyle {
           FontWeight(.semibold)
           FontSize(.em(0.875))
@@ -86,7 +86,7 @@ extension Theme {
     .heading6 { configuration in
       configuration.label
         .relativeLineSpacing(.em(0.125))
-        .markdownMargin(top: 24, bottom: 16)
+        .markdownMargin(top: 20, bottom: 14)
         .markdownTextStyle {
           FontWeight(.semibold)
           FontSize(.em(0.85))
@@ -97,7 +97,7 @@ extension Theme {
       configuration.label
         .fixedSize(horizontal: false, vertical: true)
         .relativeLineSpacing(.em(0.25))
-        .markdownMargin(top: 0, bottom: 16)
+        .markdownMargin(top: 0, bottom: 14)
     }
     .blockquote { configuration in
       HStack(spacing: 0) {
@@ -113,16 +113,16 @@ extension Theme {
     .codeBlock { configuration in
       ScrollView(.horizontal) {
         configuration.label
-          .relativeLineSpacing(.em(0.2))
+          .relativeLineSpacing(.em(0.21))
           .markdownTextStyle {
             FontFamilyVariant(.monospaced)
-            FontSize(.em(0.75))
+            FontSize(.em(0.8))
           }
-          .padding(16)
+          .padding(14)
       }
       .background(Color.secondaryBackground)
       .clipShape(RoundedRectangle(cornerRadius: 6))
-      .markdownMargin(top: 0, bottom: 16)
+      .markdownMargin(top: 0, bottom: 14)
     }
     .listItem { configuration in
       configuration.label
@@ -143,9 +143,9 @@ extension Theme {
           .alternatingRows(Color.background, Color.secondaryBackground)
         )
         .markdownTextStyle {
-          FontSize(.em(0.75))
+          FontSize(.em(0.8))
         }
-        .markdownMargin(top: 0, bottom: 16)
+        .markdownMargin(top: 0, bottom: 14)
     }
     .tableCell { configuration in
       configuration.label
@@ -164,7 +164,7 @@ extension Theme {
       Divider()
         .relativeFrame(height: .em(0.25))
         .overlay(Color.border)
-        .markdownMargin(top: 24, bottom: 24)
+        .markdownMargin(top: 20, bottom: 20)
     }
 }
 
