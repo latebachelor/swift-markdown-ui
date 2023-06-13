@@ -113,10 +113,10 @@ extension Theme {
     .codeBlock { configuration in
       ScrollView(.horizontal) {
         configuration.label
-          .relativeLineSpacing(.em(0.225))
+          .relativeLineSpacing(.em(0.2))
           .markdownTextStyle {
             FontFamilyVariant(.monospaced)
-            FontSize(.em(0.85))
+            FontSize(.em(0.75))
           }
           .padding(16)
       }
@@ -142,6 +142,9 @@ extension Theme {
         .markdownTableBackgroundStyle(
           .alternatingRows(Color.background, Color.secondaryBackground)
         )
+        .markdownTextStyle {
+          FontSize(.em(0.75))
+        }
         .markdownMargin(top: 0, bottom: 16)
     }
     .tableCell { configuration in
