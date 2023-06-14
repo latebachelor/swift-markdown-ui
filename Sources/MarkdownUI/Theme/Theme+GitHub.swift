@@ -18,11 +18,11 @@ extension Theme {
     .text {
       ForegroundColor(.text)
       BackgroundColor(.background)
-      FontSize(16)
+      FontSize(17)
     }
     .code {
       FontFamilyVariant(.monospaced)
-      FontSize(.em(0.85))
+      FontSize(.em(0.8))
       BackgroundColor(.secondaryBackground)
     }
     .strong {
@@ -157,7 +157,7 @@ extension Theme {
         }
         .fixedSize(horizontal: false, vertical: true)
         .padding(.vertical, 6)
-        .padding(.horizontal, 13)
+        .padding(.horizontal, 10)
         .relativeLineSpacing(.em(0.25))
     }
     .thematicBreak {
